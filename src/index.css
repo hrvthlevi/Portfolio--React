@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+  --color-river: #13191F;
+  --color-carbon: #2B2F2E;
+  --color-afternoon: #594C3D;
+  --color-terracotta: #C16B45;
+  --color-amber: #E6B878;
+  --color-warm-white: #F0E5D5;
+}
