@@ -7,16 +7,16 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigationItems = [
-    { name: "Home", path: "/" },
-    { name: "Projects", path: "/projects" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "Kezdőlap", path: "/" },
+    { name: "Projektek", path: "/projects" },
+    { name: "Rólam", path: "/about" },
+    { name: "Kapcsolat", path: "/contact" },
   ];
   const location = useLocation();
 
   const currentPage =
     navigationItems.find((item) => item.path === location.pathname)?.name ??
-    "Home";
+    (location.pathname === "/projects/java" ? "Java" : "Kezdőlap");
 
   return (
     <nav
@@ -63,8 +63,11 @@ function Navbar() {
 
         {/* Right side */}
         <div className="hidden md:flex items-center gap-5">
-          <button className="text-sm text-warm-white hover:text-amber transition-colors">
-            HU / EN
+          <button
+            className="text-sm text-warm-white hover:text-amber transition-colors"
+            aria-label="Jelenlegi nyelv: magyar"
+          >
+            HU
           </button>
 
           <a
@@ -83,7 +86,7 @@ function Navbar() {
         <button
           className="md:hidden text-warm-white hover:text-amber transition-colors"
           onClick={() => setIsMenuOpen((previous) => !previous)}
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? "Menü bezárása" : "Menü megnyitása"}
           aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
