@@ -1,35 +1,102 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal portfolio website built to showcase my development skills, projects, and professional journey as a software developer.
 
-Currently, two official plugins are available:
+The website is designed with a modern, minimalistic interface, featuring a dark color palette, subtle visual effects, and responsive layouts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+**Frontend**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+**Libraries & Tools**
+- React Router
+- Motion
+- Lucide React
+- React Icons
+- i18next
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Features
 
-## Expanding the Oxlint configuration
+- Responsive design
+- Modern dark-themed interface
+- Liquid Glass-inspired UI elements
+- Personal introduction and profile section
+- Technology stack showcase
+- Featured projects section
+- Dedicated project pages
+- Contact section
+- Hungarian and English language support (planned)
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Project Structure
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```text
+src/
+├── components/
+│   └── Navbar/
+├── pages/
+│   ├── Home/
+│   ├── Projects/
+│   ├── Java/
+│   ├── About/
+│   └── Contact/
+├── assets/
+├── App.tsx
+├── main.tsx
+└── index.css
+
+public/
+└── images/
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/hrvthlevi/Portfolio--React.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd Portfolio--React
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at the local address provided by Vite.
+
+## Development
+
+This project is continuously evolving. New features, pages, and improvements are being added throughout development.
+
+## Author
+
+**Horváth Levente**
+
+- GitHub: [@hrvthlevi](https://github.com/hrvthlevi)
+
+---
+
+*Built with React, TypeScript, and a passion for software development.*
